@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game-container">
+        <h1>✊ Rock Paper Scissors ✌️</h1>
+        <p class="subtitle">Choose your move and beat the computer!</p>
+
+        <section class="scoreboard">
+            <div class="score-box">
+                <h2>You</h2>
+                <p id="player-score">0</p>
+            </div>
+
+            <div class="score-box">
+                <h2>Computer</h2>
+                <p id="computer-score">0</p>
+            </div>
+        </section>
+
+        <h3>Choose your move</h3>
+
+        <section class="choices">
+            <button class="choice" data-choice="rock" aria-label="Choose rock">
+                ✊
+                <span>Rock</span>
+            </button>
+
+            <button class="choice" data-choice="paper" aria-label="Choose paper">
+                ✋
+                <span>Paper</span>
+            </button>
+
+            <button class="choice" data-choice="scissors" aria-label="Choose scissors">
+                ✌️
+                <span>Scissors</span>
+            </button>
+        </section>
+
+        <section class="result-box" aria-live="polite">
+            <p id="player-choice">Your move: —</p>
+            <p id="computer-choice">Computer's move: —</p>
+            <h2 id="result">Make your first move!</h2>
+        </section>
+
+        <button id="reset-btn">🔄 Reset Game</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
